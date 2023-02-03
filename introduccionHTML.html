@@ -1,0 +1,131 @@
+<!-- Este en un comentario -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Etiqueta para la codificacion de mi página-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con navegadores obsoletos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- La escala en la vista de mi documento(no confundir con diseño responsivo)-->
+    <title>Document</title>
+</head>
+<body>
+    <h1>Introducción a HTML</h1>
+    <!-- Etiquetas de cabecera -->
+    <h1>Estes es un H1</h1> <!-- h1*6 y se marcan 6 etiquetas de h1 -->
+    <h2>Estes es un H2</h2>
+    <h3>Estes es un H3</h3> <!-- Con ctrl + shift dar click al comienzo de cada etiqueta para editar al mismo timpo las etiquetas seleccionadas -->
+    <h4>Estes es un H4</h4>
+    <h5>Estes es un H5</h5>
+    <h6>Estes es un H6</h6>
+
+    <!-- Etiquetas de párrafos 
+        em para 'cursiva' italica
+        u para subrayar
+        b para negritas (palabras)
+        strong para texto largo en negritas
+        blockquote para crear un bloque de texto como si fuera una cita
+        del tacha texto-->
+    <p style="color:blueviolet;">
+        <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis ad soluta ratione at non fuga a explicabo reprehenderit, enim fugiat saepe ab laborum aspernatur praesentium. Ullam odio magni itaque!</em> ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam itaque excepturi, molestias sequi vel numquam saepe blanditiis praesentium cupiditate minima perferendis labore illo quidem. <blockquote> nobis necessitatibus at nisi ab.</blockquote></p>
+
+    <p>
+        <u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nulla fuga sit unde voluptate consectetur placeat, cupiditate iusto iste sint repudiandae excepturi hic qui sequi deleniti error doloremque sapiente earum!</u> ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates, impedit deserunt asperiores, <del>dolores quidem eius quia excepturi facere iusto, libero debitis. Similique harum corporis saepe excepturi veniam ratione.</del></p>
+
+    <p>
+        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aspernatur tempora quod quia autem enim dicta minus amet illo distinctio harum, fugit nobis asperiores fugiat ex? Cum reiciendis expedita ex.</b> ipsum, dolor sit amet consectetur adipisicing elit. Ad aliquid molestias quia, temporibus quibusdam impedit corrupti saepe inventore vitae nostrum dolorum veritatis, doloremque sunt est quo. Iure doloremque dolorem eaque?</p>
+    <br>
+
+    <br>
+
+    <br>
+
+    <hr>
+
+    <br>
+
+    <br>
+
+        <!-- Atributos de las etiquetas
+        Los atributos de las etiquetas son una serie de elementos que se pueden agregar a una etiqueta en si para dotarla de mas caracteristicas. (No todas las etiquetas tienen atributos). Estos atributos nos permiten agregar elementos como estilos, identificadores, eventos, etc.
+
+            - Class: Marcan un conjunto de elementos
+            - ID: Marcan un elemento en especifico
+            - Name: Marca el nombre de la etiqueta
+        -->
+
+        <!-- Etiqueta de imagen (img)
+        La etiqueta img nos permite agregar una imagen en un documento web. Los formatos más utilizados son: jpeg, png, gif, webp.
+        
+        Algunos de los atributos de la etiqueta img son:
+
+            - src (source): define la ubicación del archivo de forma interna o externa
+            - width: define ancho de la imagen
+            - height: define alto de la img
+            - alt: define descripicion de la img para temas SEO y accesibilidad
+
+        
+        -->
+        <!-- Forma para agregar img's externas-->
+        <img src="https://previews.123rf.com/images/hurricanehank/hurricanehank1605/hurricanehank160500397/57420241-el-pequeño-perrito-jack-russell-jugando-en-la-arena-de-la-playa-de-excavación-.jpg"
+         height="150px" alt="Foto de perrin en playa" title="Perrito en playas mexicanas">
+        <br>
+         <a href="https://google.com" target="_blank">Este texto me lleva a guguel</a>
+
+
+        <h2>Perrin2</h2>
+        <!-- forma para add img internas-->
+        <img src="/perrin.png" width="80%" title="perrito en playas mexicanas">
+        <br>
+        <!-- referencia a sitio o elemento externo-->
+        
+
+        <!-- Etiquetas divisorias y separadores
+        - br: nos sirve para dar una separacion (salto de linea)
+        - hr: para mostrar una linea que sirve como separador
+        -->
+        
+        <!-- Etiquetas de enlace <a>
+        Permiten la navegacion por medio de hipervinculos (links) que realizan la conexion y referencias otros archivos o paginas web, ya sea dentro de la misma aplicacion o de forma externa.
+        atributos de la etiqueta
+
+        - href: sirve para definer la ubicacion del elemento a donde nos vamos a enlazar
+
+        - target: definir como se abre ese elemento
+            - misma ventana
+            - ventana adicional
+        -->
+
+        
+        <!-- referencia a sitio o elemtno interno-->
+        <a href="/perrin.png" target="_blank" download title="Perrin en playas mexicanas">Click para descargar perrin en playa:3</a>
+
+        <!-- 
+            src(source): incrustar un recurso (pegamos en el doc)
+            href (referencia): existe un enlace que nos comunica a ese elemento, pero no necesariamente incrusta el
+        -->
+
+        <!-- Etiquetas para listas ordenadas y desordenadas
+             Sirven para crear listas ordenadas (numeros, letras, numeros romanos) y listas desordenadas (no siguen un orden y se usan bullets o figuritas para ordenar los elementos.)
+-->
+
+        <h3>Listas ordenadas</h3>
+        <ol>
+            <li>Taquito de Carnitas</li>
+            <li>Taquito de Alambre</li>
+            <li>Taquito de Suadero</li>
+            <li>Taquito de Pastor</li>
+        </ol>
+
+        <h3>Lista desordenada</h3>
+        <ul style="list-style-type: circle;">
+            <ol style="list-style-type:circle;">Hacer: 
+                <li style="list-style-type: circle;">Hacer la comida</li>
+                <li style="list-style-type: circle;">Hacer la barrición</li>
+                <li style="list-style-type: circle;">Hacer la trapeación</li>
+            </ol>
+            <ol>Lavar:
+            <li style="list-style-type: circle;">Lavar la ropa</li>
+            <li style="list-style-type: circle;">Lavar los trastes</li>
+            </ol>
+        </ul>
+</body>
+</html>
